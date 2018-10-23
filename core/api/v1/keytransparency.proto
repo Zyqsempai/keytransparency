@@ -149,7 +149,7 @@ message ListEntryHistoryRequest {
   // start is the starting epoch.
   int64 start = 2;
   // page_size is the maximum number of entries to return.
-  int32 page_size = 3;
+  int64 page_size = 3;
   // app_id is the identifier for the application.
   string app_id = 4;
   // first_tree_size is the tree_size of the currently trusted log root.
@@ -227,7 +227,7 @@ message ListMutationsRequest {
   string page_token = 3;
   // page_size is the maximum number of mutations to return in a single request.
   // The server may choose a smaller page_size than the one requested.
-  int32 page_size = 4;
+  int64 page_size = 4;
   // TODO(gbelvin): Add field mask.
 }
 
